@@ -1,0 +1,33 @@
+from app.schemas.common import (
+    EvidenceRef,
+    FailureScope,
+    FunctionCategory,
+    ProtocolLayer,
+    RepairLevel,
+    RiskLevel,
+    SchemaMeta,
+    Severity,
+    SideEffectLevel,
+    SourceType,
+    TestRole,
+    TransportType,
+    UserConfirmation,
+    Verdict,
+)
+
+__all__ = [
+    "EvidenceRef",
+    "FailureScope",
+    "FunctionCategory",
+    "ProtocolLayer",
+    "RepairLevel",
+    "RiskLevel",
+    "SchemaMeta",
+    "Severity",
+    "SideEffectLevel",
+    "SourceType",
+    "TestRole",
+    "TransportType",
+    "UserConfirmation",
+    "Verdict",
+]

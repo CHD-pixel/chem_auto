@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+/*.egg-info/
+/build/
+/dist/
+
+# Virtual env
+.venv/
+
+# Secrets — never commit real API keys
+.env
+
+# Local runtime data (sessions, artifacts, registry)
+.adk/
+/data/
+/logs/
+*.session.json
+
+# Caches & temp
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tmp/
+
+# Dev-only tooling config
+.claude/
+.agents/
+
+# Downloaded manuals & experiments
+/downloads/
+/experiments/
+/compare_test/
+
+# Dev log
+/log.md

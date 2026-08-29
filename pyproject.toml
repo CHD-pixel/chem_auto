@@ -1,0 +1,60 @@
+[project]
+name = "chem-auto"
+version = "0.1.0"
+description = "Local ChemAutoAgent prototype built with Google ADK"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk",
+    "litellm",
+    "loguru",
+    "pydantic",
+    "pyserial",
+    "pyvisa",
+    "python-dotenv",
+    "rich",
+    "paddleocr>=2.9.0",
+    "easyocr>=1.7.2",
+    "paddlex[ocr]>=3.5.1",
+    "python-docx>=1.2.0",
+    "minimalmodbus>=2.1",
+    "python-can>=4.5",
+    "canopen>=2.4.1",
+]
+
+# PaddlePaddle 后端按硬件二选一安装：
+#   uv sync --extra gpu   → NVIDIA 显卡 + CUDA 12.9 驱动（OCR 快）
+#   uv sync --extra cpu   → 任何机器可跑（OCR 较慢）
+[project.optional-dependencies]
+gpu = [
+    "paddlepaddle-gpu==3.2.1",
+    "nvidia-cudnn-cu12>=9.9.0.52",
+]
+cpu = [
+    "paddlepaddle==3.2.1",
+]
+
+[tool.uv.sources]
+paddlepaddle-gpu = { index = "paddle-cu129" }
+
+[[tool.uv.index]]
+name = "paddle-cu129"
+url = "https://www.paddlepaddle.org.cn/packages/stable/cu129/"
+explicit = true
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true
