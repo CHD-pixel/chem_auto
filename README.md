@@ -69,11 +69,11 @@ DEEPSEEK_BASE_URL=https://api.deepseek.com
 ## 运行
 
 ```bash
-# Web 界面（推荐，可查看 session state / 事件历史）
-uv run adk web .
-
-# 命令行对话
+# 命令行对话（推荐）
 uv run adk run app
+
+# Web 界面（当前有 bug，暂不推荐）
+uv run adk web .
 ```
 
 ---
@@ -149,8 +149,8 @@ uv sync --extra cpu    # CPU 版
 ### 运行
 
 ```bash
-uv run adk web .        # Web 界面（推荐）
-uv run adk run app      # 命令行对话
+uv run adk run app      # 命令行对话（推荐）
+uv run adk web .        # Web 界面（当前有 bug，暂不推荐）
 ```
 
 ### 重开对话 / 清空历史
@@ -166,13 +166,14 @@ uv run adk run app      # 命令行对话
 
 > 默认不加任何参数也会保存会话（见「数据与历史记录」）。下面说的是「把某次会话导出/恢复」的进阶用法。
 
-- **推荐用 Web 界面恢复**：`uv run adk web .` 会自动列出所有历史会话，点选即可继续。
 - **CLI 恢复**：`adk run` 每次运行都是新会话，且不能直接从 `session.db` 按编号挑会话，需要先导出再恢复：
 
 ```bash
 uv run adk run app --save_session                         # 退出时导出成 app/<session_id>.session.json
 uv run adk run app --resume app/<session_id>.session.json # 恢复那次会话继续
 ```
+
+> Web 界面也能列出历史会话并恢复，但当前 web 有 bug，暂不推荐。
 
 ### 强制不保存（内存模式）
 
