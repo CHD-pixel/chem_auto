@@ -137,6 +137,46 @@ app/
 
 ---
 
+## 常用命令
+
+### 安装
+
+```bash
+uv sync --extra gpu    # GPU 版（NVIDIA 显卡）
+uv sync --extra cpu    # CPU 版
+```
+
+### 运行
+
+```bash
+uv run adk web .        # Web 界面（推荐）
+uv run adk run app      # 命令行对话
+```
+
+### 重开对话 / 清空历史
+
+| 场景 | 做法 |
+|---|---|
+| CLI 开新会话 | 退出当前对话（Ctrl+C），重新 `uv run adk run app`（每次运行都是新会话） |
+| Web 开新会话 | 在界面上点「新建会话 / New session」按钮 |
+| 只清对话历史 | 删除 `app/.adk/session.db` |
+| 清空全部数据 | 删除整个 `app/.adk/`（连已发布设备一起清空） |
+
+### 会话保存 / 恢复（可选）
+
+```bash
+uv run adk run app --save_session             # 退出时把会话存成 JSON
+uv run adk run app --resume session.json      # 从保存的会话继续
+```
+
+### 强制不保存（内存模式）
+
+```bash
+uv run adk run app --no_use_local_storage     # 本次运行不落盘，退出即丢
+```
+
+---
+
 ## 说明
 
 - 协议模板在 `app/skills/`，最终发布的驱动属于用户产物，不存回模板。
