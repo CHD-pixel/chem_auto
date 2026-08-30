@@ -162,11 +162,16 @@ uv run adk run app      # 命令行对话
 | 只清对话历史 | 删除 `app/.adk/session.db` |
 | 清空全部数据 | 删除整个 `app/.adk/`（连已发布设备一起清空） |
 
-### 会话保存 / 恢复（可选）
+### 恢复指定会话
+
+> 默认不加任何参数也会保存会话（见「数据与历史记录」）。下面说的是「把某次会话导出/恢复」的进阶用法。
+
+- **推荐用 Web 界面恢复**：`uv run adk web .` 会自动列出所有历史会话，点选即可继续。
+- **CLI 恢复**：`adk run` 每次运行都是新会话，且不能直接从 `session.db` 按编号挑会话，需要先导出再恢复：
 
 ```bash
-uv run adk run app --save_session             # 退出时把会话存成 JSON
-uv run adk run app --resume session.json      # 从保存的会话继续
+uv run adk run app --save_session                         # 退出时导出成 app/<session_id>.session.json
+uv run adk run app --resume app/<session_id>.session.json # 恢复那次会话继续
 ```
 
 ### 强制不保存（内存模式）
