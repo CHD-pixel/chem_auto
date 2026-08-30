@@ -62,7 +62,6 @@ DEEPSEEK_API_KEY=sk-你的key
 DEEPSEEK_BASE_URL=https://api.deepseek.com
 ```
 
-> `.env` 含真实密钥，**不要提交到 git**（已在 `.gitignore` 中排除）。
 
 ---
 
@@ -89,12 +88,7 @@ uv run adk web .
 
 ---
 
-## Windows 注意事项
 
-- 命令行运行前建议设置 `export PYTHONIOENCODING=utf-8`，避免 emoji 输出触发 GBK 编码崩溃。
-- 直接运行 `scripts/` 下的脚本时需先 `export PYTHONPATH="."`。
-
----
 
 ## 目录结构
 
