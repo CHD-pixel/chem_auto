@@ -185,17 +185,7 @@ uv run adk run app --no_use_local_storage     # 本次运行不落盘，退出�
 
 ## 引用 (Citation)
 
-如果本工作对你的研究有帮助，请引用：
-
-**MDPI / ACS Style**
-
-> Wu, C.; Jiang, S.; Zuo, Z.; Li, J. ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals. *Appl. Sci.* **2026**, *16*, 8291. https://doi.org/10.3390/app16168291
-
-**APA Style**
-
-> Wu, C., Jiang, S., Zuo, Z., & Li, J. (2026). ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals. *Applied Sciences*, *16*(16), 8291. https://doi.org/10.3390/app16168291
-
-**BibTeX**
+如果本工作对你的研究有帮助，请引用以下论文。也可点击仓库右侧的「Cite this repository」按钮获取 APA / BibTeX 格式。
 
 ```bibtex
 @Article{app16168291,
@@ -208,7 +198,6 @@ NUMBER = {16},
 ARTICLE-NUMBER = {8291},
 URL = {https://www.mdpi.com/2076-3417/16/16/8291},
 ISSN = {2076-3417},
-ABSTRACT = {Instrument control remains a practical bottleneck in laboratory automation and self-driving laboratories. Although large language models (LLMs) have shown strong potential in document understanding, code generation, and scientific workflow automation, most existing systems assume that ready-to-use instrument interfaces are already available. However, converting heterogeneous device manuals and communication protocols into tested, reusable software drivers therefore still requires substantial manual effort and iterative hardware-level debugging. In this work, we present ChemAutoAgent, a multi-agent system that converts text-based instrument manuals into tested and reusable laboratory instrument drivers through a staged, evidence-traceable pipeline. We evaluate ChemAutoAgent tested and reusable drivers on three representative instruments—a magnetic stirrer, a peristaltic pump, and a Raman spectrometer—spanning three communication protocols: ASCII/NAMUR, MODBUS RTU, and a custom binary-frame protocol. Following iterative testing and repair, all evaluated driver functions passed the predefined tests for connection establishment, parameter configuration, command execution, and data acquisition. The evaluated drivers required between one and four repair cycles, with autonomous operation ratios ranging from 73% to 81%. A cross-device invocation experiment further demonstrates the feasibility of reusing published drivers in a multi-device workflow.},
 DOI = {10.3390/app16168291}
 }
 ```
