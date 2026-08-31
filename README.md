@@ -1,5 +1,7 @@
 # ChemAutoAgent
 
+[English](README_EN.md) | [简体中文](README.md)
+
 面向化学仪器，光谱仪器、泵阀设备、温控设备等实验室硬件的**多 Agent 自动化系统**。
 
 上传仪器 PDF 手册后，系统自动完成：
