@@ -185,7 +185,13 @@ uv run adk run app --no_use_local_storage     # 本次运行不落盘，退出�
 
 ## 引用 (Citation)
 
-如果本工作对你的研究有帮助，请引用以下论文。也可点击仓库右侧的「Cite this repository」按钮获取 APA / BibTeX 格式。
+如果本工作对你的研究有帮助，请引用：
+
+> Wu, C.; Jiang, S.; Zuo, Z.; Li, J. ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals. *Appl. Sci.* **2026**, *16*, 8291. https://doi.org/10.3390/app16168291
+
+论文链接：<https://www.mdpi.com/2076-3417/16/16/8291>
+
+BibTeX：
 
 ```bibtex
 @Article{app16168291,
