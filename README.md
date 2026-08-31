@@ -180,3 +180,27 @@ uv run adk run app --no_use_local_storage     # 本次运行不落盘，退出�
 ## 说明
 
 - 协议模板在 `app/skills/`，最终发布的驱动属于用户产物，不存回模板。
+
+---
+
+## 引用 (Citation)
+
+如果本工作对你的研究有帮助，请引用：
+
+> Wu, C.; Jiang, S.; Zuo, Z.; Li, J. ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals. *Appl. Sci.* **2026**, *16*, 8291. https://doi.org/10.3390/app16168291
+
+BibTeX：
+
+```bibtex
+@article{Wu2026ChemAutoAgent,
+  author  = {Wu, Cheda and Jiang, Shunnan and Zuo, Zhaohong and Li, Jun},
+  title   = {{ChemAutoAgent}: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals},
+  journal = {Applied Sciences},
+  volume  = {16},
+  number  = {16},
+  pages   = {8291},
+  year    = {2026},
+  doi     = {10.3390/app16168291},
+  publisher = {MDPI},
+}
+```
