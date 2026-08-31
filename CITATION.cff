@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "ChemAutoAgent"
+version: 0.1.0
+license: MIT
+url: "https://github.com/CHD-pixel/chem_auto"
+authors:
+  - family-names: "Wu"
+    given-names: "Cheda"
+  - family-names: "Jiang"
+    given-names: "Shunnan"
+  - family-names: "Zuo"
+    given-names: "Zhaohong"
+  - family-names: "Li"
+    given-names: "Jun"
+preferred-citation:
+  type: article
+  title: "ChemAutoAgent: A Multi-Agent System for Evidence-Controlled Laboratory Instrument Driver Generation from Text-Based Manuals"
+  authors:
+    - family-names: "Wu"
+      given-names: "Cheda"
+    - family-names: "Jiang"
+      given-names: "Shunnan"
+    - family-names: "Zuo"
+      given-names: "Zhaohong"
+    - family-names: "Li"
+      given-names: "Jun"
+  journal: "Applied Sciences"
+  volume: 16
+  issue: 16
+  pages: 8291
+  year: 2026
+  doi: "10.3390/app16168291"
+  publisher: "MDPI"
